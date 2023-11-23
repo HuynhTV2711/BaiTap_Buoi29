@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="text-center mb-5">
+        Bài tập quản lý học viện nghiên cứu và giảng dạy
+      </h2>
+      <form>
+        <div class="row">
+          <!-- Chọn loại Người dùng -->
+          <div class="mb-3 col-4">
+            <label for="" class="form-label">Chọn loại người dùng</label>
+            <select class="form-select form-select-lg" name="" id="nguoiDung">
+              <option selected>Chọn loại người dùng</option>
+              <option value="Sinh viên">Sinh viên</option>
+              <option value="Employee">Employee</option>
+              <option value="Customer">Customer</option>
+            </select>
+            <small id="errLoaiNguoiDung" class="form-text text-warning"></small>
+          </div>
+          <!-- Mã user -->
+          <div class="mb-3 col-4">
+            <label for="" class="form-label">Nhập mã user</label>
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="maUser"
+              aria-describedby="helpId"
+              placeholder="Nhập mã user"
+            />
+            <small id="errMaUser" class="form-text text-warning"></small>
+          </div>
+          <!-- Name -->
+          <div class="mb-3 col-4">
+            <label for="" class="form-label">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="hoTen"
+              aria-describedby="helpId"
+              placeholder="Name"
+            />
+            <small id="errName" class="form-text text-warning"></small>
+          </div>
+          <!-- email -->
+          <div class="mb-3 col-4">
+            <label for="" class="form-label">Email</label>
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="email"
+              aria-describedby="helpId"
+              placeholder="Email"
+            />
+            <small id="errEmail" class="form-text text-warning"></small>
+          </div>
+          <!-- địa chỉ -->
+          <div class="mb-3 col-4">
+            <label for="" class="form-label">Địa chỉ</label>
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="diaChi"
+              aria-describedby="helpId"
+              placeholder="Địa chỉ"
+            />
+            <small id="errDiaChi" class="form-text text-warning"></small>
+          </div>
+          <!-- Điểm toán -->
+          <div class="mb-3 col-4 colDiemToan">
+            <label for="" class="form-label">Điểm toán</label>
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="diemToan"
+              aria-describedby="helpId"
+              placeholder="Điểm toán"
+            />
+            <small id="errDiemToan" class="form-text text-warning"></small>
+          </div>
+          <!-- Điểm lý -->
+          <div class="mb-3 col-4 colDiemLy">
+            <label for="" class="form-label">Điểm lý</label>
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="diemLy"
+              aria-describedby="helpId"
+              placeholder="Điểm lý"
+            />
+            <small id="errDiemLy" class="form-text text-warning"></small>
+          </div>
+          <!-- điểm hóa -->
+          <div class="mb-3 col-4 colDiemHoa">
+            <label for="" class="form-label">Điểm hóa</label>
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="diemHoa"
+              aria-describedby="helpId"
+              placeholder="Điểm hóa"
+            />
+            <small id="errDiemHoa" class="form-text text-warning"></small>
+          </div>
+          <!-- Số ngày làm việc -->
+          <div class="mb-3 col-4 colSoNgayLamViec">
+            <label for="" class="form-label">Số ngày làm việc</label>
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="soNgayLam"
+              aria-describedby="helpId"
+              placeholder="Số ngày làm việc"
+            />
+            <small id="errSoNgayLamViec" class="form-text text-warning"></small>
+          </div>
+          <!-- Số ngày làm việc -->
+          <div class="mb-3 col-4 colLuongTheoNgay">
+            <label for="" class="form-label">Lương theo ngày</label>
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="luongTheoNgay"
+              aria-describedby="helpId"
+              placeholder="Lương theo ngày"
+            />
+            <small id="errLuongTheoNgay" class="form-text text-warning"></small>
+          </div>
+          <!--Giá trị hóa đơn  -->
+          <div class="mb-3 col-4 colGiaTriHoaDon">
+            <label for="" class="form-label">Giá trị hóa đơn</label>
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="giaTriHoaDon"
+              aria-describedby="helpId"
+              placeholder="Giá trị hóa đơn"
+            />
+            <small id="errGiaTriHoaDon" class="form-text text-warning"></small>
+          </div>
+          <!--Tên công ty  -->
+          <div class="mb-3 col-4 colTenCongTy">
+            <label for="" class="form-label">Tên công ty</label>
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="tenCongTy"
+              aria-describedby="helpId"
+              placeholder="Tên công ty"
+            />
+            <small id="errTenCongTy" class="form-text text-warning"></small>
+          </div>
+          <!--Đánh giá  -->
+          <div class="mb-3 col-4 colDanhGia">
+            <label for="" class="form-label">Đánh giá</label>
+            <select class="form-select form-select-lg" name="" id="danhGia">
+              <option selected value="">Đánh giá</option>
+              <option value="Xuất sắc">Xuất sắc</option>
+              <option value="Giỏi">Giỏi</option>
+              <option value="Khá">Khá</option>
+            </select>
+            <small id="errDanhGia" class="form-text text-warning"></small>
+          </div>
+
+          <!-- button group -->
+          <div class="row mb-5">
+            <div class="col-4">
+              <button class="btn btn-primary" type="button" onclick="themNguoiDung()" >Thêm người dùng</button>
+              <button class="btn btn-secondary" type="button" onclick="capNhatUser()">Cập nhật</button>
+            </div>
+          </div>
+      </form>
+
+          <h2 class="text-center mb-5">Danh sách người dùng</h2>
+          <!-- Lọc người dùng -->
+          <div class="mb-3 col-3">
+            <label for="" class="form-label">Lọc loại người dùng</label>
+            <select
+              class="form-select form-select-lg"
+              name=""
+              id="locLoaiNguoiDung"
+              onchange="locTheoDoiTuong()"
+            >
+              <option value="Tất cả">Tất cả</option>
+              <option value="Sinh viên">Sinh viên</option>
+              <option value="Employee">Employee</option>
+              <option value="Customer">Customer</option>
+            </select>
+          </div>
+          <div class="table-responsive">
+            <table
+              class="table table-striped table-hover table-borderless table-primary align-middle"
+            >
+              <thead class="table-light">
+                <tr>
+                  <th>Mã user</th>
+                  <th>Họ tên</th>
+                  <th>Email</th>
+                  <th>Địa chỉ</th>
+                  <th>Đối tượng</th>
+                  <th>Thông tin riêng</th>
+                  <th>Hành động</th>
+                </tr>
+              </thead>
+              <tbody class="table-group-divider">
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./js/models/Person.js"></script>
+    <script src="./js/xuLiFormNhap.js"></script>
+    <script src="./js/validation/validation.js"></script>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
